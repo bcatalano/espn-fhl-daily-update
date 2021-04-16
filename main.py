@@ -23,7 +23,6 @@ def main():
     # send an email to the user
     msg = readMessageFile()
     subject = "ESPN Fantasy Hockey Daily Roster Update"
-    msgPlain = "Hi\nPlain Email"
     try:
         SendMessage(sender, to, subject, msg)
     except:
