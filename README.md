@@ -24,7 +24,7 @@ Open the config.py in an editor. Anything that is commented out needs to be repl
 * `to`: String with the email address that the notification is sent to. You can set this to the same as sender to send it to yourself.
 
 ### Getting your private league's credentials (if needed)
-You'll notice that I did not include what should be input for `swid` and `espn_s2`. You only need to provide parameters to these if your league is private. If you're in a public league, you can simply comment out both `swid` and `espn_s2`. You can tell if your league is private by whether or not you needed to be invited to enjoy it, or if you attempt to use the script and you get an invalid credentials error when trying to access the API. I'll show the process of how to do this on Chrome. You will have to look up how to find cookies in your browser if you do not use Chrome.
+You'll notice that I did not include what should be input for `swid` and `espn_s2`. You only need to provide parameters to these if your league is private. If you're in a public league, you can simply comment out both `swid` and `espn_s2`. You can tell if your league is private by whether or not you needed to be invited to join it, or if you attempt to use the script and you get an invalid credentials error when trying to access the API. I'll show the process of how to do this on Chrome. You will have to look up how to find cookies in your browser if you do not use Chrome.
 * Click on the 3 dot symbol in the top right (next to your profile picture). Click on settings.
 * Search for "cookies". Click on "Cookies and other site data".
 * Click on "See all cookies and site data"
