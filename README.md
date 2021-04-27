@@ -20,7 +20,7 @@ Well then you are in luck! This is a small utility that uses the relatively unkn
 Simply download the files `main.py`, `config.py`, `lib.py`, and `gmail.py`. Put them all in the same directory. You can simply call the main function by typing `python3 main.py` from your command prompt or terminal, but it is more useful to automate this task through Windows or Mac/Linux. I will show the steps for doing this below. Refer to the file `requirements.txt` for the libraries and their versions used in this project. 
 
 ## How to use it
-To get this to work, you will have to edit `config.py` and follow some steps to get the Gmail API working.
+Before starting, run the command `pip install -r requirements.txt` from your python shell to install all the necessary dependencies if you do not already have them. Following this step, you will have to edit `config.py` and follow some steps to get the Gmail API working.
 
 ### Editing config.py
 Open the config.py in an editor. Anything that is commented out needs to be replaced with the specifics of your league.
