@@ -1,6 +1,14 @@
 # ESPN Fantasy Hockey Daily Update
-![image](https://user-images.githubusercontent.com/72364619/114965115-f8d78680-9e3d-11eb-8ae9-a347147705e7.png)
-A small utility that uses the relatively unknown and undocumented ESPN fantasy hockey API v3 to update you with the status of your roster every day by email. While this tool is unnecessary, it might save your butt once or twice when you accidentally forget to set your lineup! Some features include:
+Say you have the following situation where David Pastrnak was accidentally left on your bench:
+
+![image](https://user-images.githubusercontent.com/72364619/116274478-b58bea80-a750-11eb-9dd7-5312b9e6d7a4.png)
+
+
+Wouldn't it be nice if someone had your back?
+
+![image](https://user-images.githubusercontent.com/72364619/116274562-cb011480-a750-11eb-93fa-92facdb94864.png)
+
+Well then you are in luck! This is a small utility that uses the relatively unknown and undocumented ESPN fantasy hockey API v3 to update you with the status of your roster every day by email. While this tool is unnecessary, it might save your butt once or twice when you accidentally forget to set your lineup! Some features include:
 * Tells you who is injured, out, or players with postponed games
 * Informs you of inactive players not on your bench 
 * Notifies you of active players that are currently on your bench (if you don't already have the max of a certain position set) including the specific position - __this is the main reason I built this!__
@@ -9,7 +17,7 @@ A small utility that uses the relatively unknown and undocumented ESPN fantasy h
 *Note that the ESPN API could change at any point (note the v3). It is likely this script will become non-functional if that is the case.*
 
 ## Usage
-Simply download the files `main.py`, `config.py`, `lib.py`, and `gmail.py`. Put them all in the same directory. You can simply call the main function by typing `python3 main.py` from your command prompt or terminal, but it is more useful to automate this task through Windows or Mac/Linux. I will show the steps for doing this below. 
+Simply download the files `main.py`, `config.py`, `lib.py`, and `gmail.py`. Put them all in the same directory. You can simply call the main function by typing `python3 main.py` from your command prompt or terminal, but it is more useful to automate this task through Windows or Mac/Linux. I will show the steps for doing this below. Refer to the file `requirements.txt` for the libraries and their versions used in this project. 
 
 ## How to use it
 To get this to work, you will have to edit `config.py` and follow some steps to get the Gmail API working.
