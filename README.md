@@ -43,8 +43,15 @@ You'll notice that I did not include what should be input for `swid` and `espn_s
 ### Using the Gmail API
 I highly recommend following the top answer from [this tutorial](https://stackoverflow.com/questions/37201250/sending-email-via-gmail-python/63847325#63847325) on a StackOverflow forum post that goes into detail on how to set up the Gmail API for usage with Python. __The most important thing is to ensure that the `client_secret.json` file is in the same directory as all the other files!__ I essentially adapted this answer's code to get the Gmail functionality working for this script. If you don't have a Gmail account or your Google account doesn't require OAUTH authentication, take a look at [this](https://realpython.com/python-send-email/) for an idea of how to incorporate generic SMTP communication to get your email to work.
 
+You will probably get the following message when running main.py for the first time:
+
+![Screenshot 2021-04-29 130901](https://user-images.githubusercontent.com/72364619/116592593-2ae0f200-a8ee-11eb-98ab-505e47d0be5d.png)
+
+Don't worry, this is normal. Sign in with the email account you intend to send messaages from in the opened browser window and simply follow the prompts for allowing the script to send emails using the Gmail API. Open the location of the stored credentials (as shown at the bottom of the image) and place them in the top level directory. You can read more about this [here](https://developers.google.com/gmail/api/auth/web-server), but essentially you will need to do this since using the Gmail API for offline access requires access to a refresh token. This refresh token will be stored in `gmail-python-email-send.json`. If your refresh token is revoked for any reason, you will need to repeat this process.
+
+
 ## Automating the script using Task Scheduler
-Windows has a really useful feature known as Task Scheduler that can be used to automate tasks, especially tasks such as running Python programs. If you want to automate on Linux or Mac, you will likely need to use something like [CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) or modify main.py to use the Python sleep functionality and have it continuously running in the background. To set up Task Scheduler to automate this script, follow these steps:
+Windows has a really useful feature known as Task Scheduler that can be used to automate tasks, especially tasks such as running Python programs. If you want to automate on Linux or Mac, you will likely need to use something like [CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) or modify main.py to use the Python sleep functionality and have it continuously running in the background. I like using Task Scheduler since I can conserve system resources and not have to worry about ever accidentally closing the process. To set up Task Scheduler to automate this script, follow these steps:
 * Search for "Task Scheduler" in the Windows taskbar
 * In the top right, click "Create Basic Task..."
 * Name your task something descriptive. Hit next.
